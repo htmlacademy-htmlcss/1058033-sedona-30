@@ -1,0 +1,55 @@
+/*Fonts*/
+
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"),
+       url("../fonts/PTSans.woff2") format("woff2"),
+       url("../fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: local("PT Sans Bold"),
+       url("../fonts/PTSans-Bold.woff2") format("woff2"),
+       url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Variables*/
+
+:root
+--main-text: #000000;
+--add-text: #333333;
+--welcome-text: #81B3D3;
+--basic-neutral: #EEEEEE;
+--basic-light: #FFFFFF;
+--add-decor: #766458;
+--standard-blue: #81B3D2;
+--hover-blue: #669EC0;
+--active-blue: #5496BD;
+--standard-brown: #766357;
+--hover-brown: #604E43;
+--active-brown: #503E33;
+--hover-input: #EBEBEB;
+--add-dark: #231F20;
+--add-button: #F2F2F2;
+--blocked-color: #6A6A6A;
+
+/*Global*/
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--main-text);
+  text-transform: uppercase;
+  background-color: var(--basic-light);
+}
+
