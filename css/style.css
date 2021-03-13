@@ -20,7 +20,7 @@
 
 /*Variables*/
 
-:root
+:root {
 --main-text: #000000;
 --add-text: #333333;
 --welcome-text: #81B3D3;
@@ -37,6 +37,7 @@
 --add-dark: #231F20;
 --add-button: #F2F2F2;
 --blocked-color: #6A6A6A;
+}
 
 /*Global*/
 
@@ -51,5 +52,290 @@ body {
   color: var(--main-text);
   text-transform: uppercase;
   background-color: var(--basic-light);
+  text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.invisible {
+  display: none;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--main-text);
+  background-color: var(--basic-light);
+}
+
+.site-navigation,
+.results-list{
+  list-style: none;
+}
+
+.site-navigation a:hover {
+  color: var(--standard-blue);
+}
+
+.site-navigation a:focus {
+  opacity: 0.3;
+}
+
+.site-navigation a:active {
+  color: var(--standard-brown);
+  opacity: 0.3;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+}
+
+.main-logo {
+  position: absolute;
+}
+
+/*Index page*/
+
+.contaner{
+ text-align: center;
+}
+
+.greeting {
+  background: url(../img/background_photo.jpg) no-repeat center top;
+}
+
+.about-city{
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.reasons {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+/*Features*/
+
+.features-list {
+  list-style: none;
+}
+
+.feature-illustrated {
+  background-color: var(--standard-blue);
+}
+
+.feature-text{
+  color: var(--basic-light);
+}
+
+.feature-desc {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.feature-add{
+  background-color: var(--basic-neutral);
+}
+
+/*Booking*/
+
+.selection-text{
+font-size: 30px;
+line-height: 24px;
+}
+
+.selection-desc{
+font-size: 14px;
+font-weight: 400;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-light);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--standard-brown);
+  border: none;
+}
+
+.button:hover,
+.button:focus{
+  background-color: var(--hover-brown);
+}
+
+.button:active {
+  background-color: var(--active-brown);
+  opacity: 0.3;
+}
+
+/*Catalog*/
+
+.page-catalog{
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--main-text);
+}
+
+.main-navigation{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--main-text);
+}
+.filters{
+  background-image: url("../img/background.jpg");
+  background-position: center, top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/*Filters*/
+.filter legend {
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--basic-light);
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-input-checkbox + label{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-light);
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--basic-light);
+}
+
+.filter-input-checkbox:disabled{
+  color: var(--blocked-color);
+}
+
+/*Sorting*/
+
+.sorting-result{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sorting-list{
+  list-style: none;
+}
+
+.sorting{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--main-text);
+}
+
+.sorting-item{
+  opacity: 0.3;
+  text-decoration-style: dotted;
+}
+
+.sorting-item:hover{
+  color: var(--standard-blue);
+}
+.sorting-item:active{
+  color: var(--main-text);
+}
+
+
+
+/*Results*/
+
+.result-item{
+font-weight: 700;
+font-size: 21px;
+line-height: 26px;
+color: var(--main-text);
+}
+
+.result-desc,
+.price{
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--add-text);
+}
+
+.button-booking{
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button-desc{
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--standard-blue);
+  color:var(--basic-light);
+}
+
+.rating{
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--add-button);
+  color: #666;
+}
+
+/* Contacts */
+
+.contacts-phone,
+.instagram-tag {
+  color: inherit;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+/*Footer*/
+.main-footer{
+  opacity: 0.9;
+  color: var(--main-text);
+}
+
+.social-list{
+  list-style: none;
+  color: var(--main-text);
+}
+
+.social-icon-background:hover{
+  fill: var(--hover-blue);
+}
+.social-icon-background:active{
+  fill: var(--active-blue);
+}
+
+.social-sign:active{
+  opacity: 0.3;
+}
+
+.copyright-text{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.copyright-logo:hover {
+  fill: var(--standard-blue);
+}
+.copyright-logo:active {
+  fill: #BDBBBC;
+}
